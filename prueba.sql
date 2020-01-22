@@ -52,7 +52,6 @@ INSERT INTO categorias(id_categoria, categoria, descripcion) VALUES('3','drogas'
 
 ALTER TABLE categorias ADD PRIMARY KEY (id_categoria);
 ALTER TABLE productos ADD PRIMARY KEY (id_productos);
-ALTER TABLE productos ADD CONSTRAINT constraintname UNIQUE (categoria);
 ALTER TABLE categorias ADD CONSTRAINT constraint_name UNIQUE (categoria);
 ALTER TABLE productos ADD FOREIGN KEY (categoria) REFERENCES categorias (categoria);
 
